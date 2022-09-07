@@ -14,16 +14,15 @@ public class ThirdServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	public void init(ServletConfig config) throws ServletException {
-		System.out.println("init 메서드 호출");
+		System.out.println("ThirdServlet init 메소드 호출");
 	}
 
 	public void destroy() {
-		System.out.println("distroy 메서드 호출");
+		System.out.println("ThirdServlet destroy 메소드 호출");
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("doGet 메서드 호출");
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		System.out.println("ThirdServlet  doGet 메소드 호출");
 	}
 
 }

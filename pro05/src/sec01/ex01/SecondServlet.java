@@ -7,20 +7,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class SecondServlet extends HttpServlet{
-
+public class SecondServlet extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
-		System.out.println("init 메서드 호출");
+		System.out.println("init 메서드 호출>>>>");
 	}
-	
+
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("doGet 메서드 호출");
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws  ServletException, IOException {
+		System.out.println("doGet 메서드 호출>>>>");
 	}
 
 	@Override
 	public void destroy() {
-		System.out.println("distroy 메서드 호출");
-	}
+		System.out.println("destroy 메서드 호출>>>>");
+	}	
 }
