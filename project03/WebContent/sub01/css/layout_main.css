@@ -1,0 +1,35 @@
+﻿html{overflow-y: scroll;}
+*{margin: 0; padding: 0;}
+img{border: 0;}
+body{background: url(../images/b.png) no-repeat center top; font-size: 26px; color: black;}
+ul, li, dd, dt, dl{list-style: none;}
+a{text-decoration: none;}
+.fl{float: left;}
+.fr{float: right;}
+.cb{clear: both;}
+.cf:after{content: ''; display: block; clear: both;}
+
+#header{background: rgba(0,0,255,.3); width: 1420px; height: 157px; margin: 0 auto;}
+	#main{background: #123542; width: 1420px; height: 90px; margin: 0 auto;}
+	#menu{background: #159481; width: 1420px; height: 67px; margin: 0 auto;}
+	
+#section{background: rgba(0,0,140,0.3); width: 1420px; height: 1845px; margin: 0 auto;}
+	#top{background: #156892; width: 1420px; height: 505px; margin: 0 auto;}
+	#service{background: #798852; width: 1420px; height: 390px; margin: 0 auto;}
+		#mainService{float: left; background: #ffc926; width: 715px; height: 390px;}
+		#mainbankingProduct{float: left; background: #00ff00; width: 705px; height: 390px;}
+	#event{background: #168545; width: 1420px; height: 315px; margin: 0 auto;}
+		#mainEvent{float: left; background: #ff9673; width: 715px; height: 315px; margin: 0 auto;}
+		#recommendProduct{float: left; background: #b35900; width: 705px; height: 315px; margin: 0 auto;}
+	#notice{background: #575748; width: 1420px; height: 265px; margin: 0 auto;}
+		#leftNotice{float: left; background: #ff00bf; width: 455px; height: 265px; margin: 0 auto;}
+		#centerNotice{float: left; background: #0059b3; width: 500px; height: 265px; margin: 0 auto;}
+		#rightNotice{float: left; background: #d93600; width: 465px; height: 265px; margin: 0 auto;}
+	#time{background: #156889; width: 1420px; height: 245px; margin: 0 auto;}
+		#leftTime{float: left; background: #cccccc; width: 430px; height: 245px; margin: 0 auto;}
+		#rightTime{float: left; background: #bfffff; width: 990px; height: 245px; margin: 0 auto;}
+		#bottomTime{float: left; background: #8c2300; width: 1420px; height: 125px; margin: 0 auto;}
+	
+#footer{background: rgba(0,255,0,.3); width: 1420px; height: 200px; margin: 0 auto;}
+	#personal{float: left; background: #b9b9c8; width: 1010px; height: 200px; margin: 0 auto;}
+	#global{float: left; background: #a8a8b7; width: 410px; height: 200px; margin: 0 auto;}

@@ -1,0 +1,44 @@
+﻿html{overflow-y: scroll;}
+*{margin: 0; padding: 0;}
+img{border: 0;}
+
+body{background: url(../images/bg1.png) no-repeat center top;}
+
+.fl{float: left;}
+/* ----------------------------주석----------------------------- */
+header{width: 1420px; height: 230px; background: rgba(0,0,255,0.3); margin: 0 auto;}
+
+
+
+/* ----------------------------주석----------------------------- */
+section{width: 1420px; height: 1510px; background: rgba(0,255,255,0.3); margin: 0 auto;}
+ul, li{list-style: none;}
+#wrap>section>#QnA{background: rgba(0,0,0,0.3); width: 1420px; height: 420px;}
+
+
+#wrap>section>#Total{background: rgba(255,255,255,0.3); width: 1420px; height: 32px;}
+#Total>li{padding-top: 5px; padding-left: 6px;}
+
+
+#wrap>section>#title{background: rgba(255,0,0,0.3); width: 1420px; height: 50px; border-top: 2px solid #0000ff;}
+#title>#n{margin-left: 50px;}
+
+
+#wrap>section>#rmf{background: rgba(0,255,0,0.3); width: 1420px; height: 635px;}
+#rmf{border-top: 1px solid #999999; border-bottom: 1px solid #999999; font-size: 20px; }
+#rmf>ul>li{border-bottom: 1px solid #999999; text-align: center;}
+.ellipsis{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.box1{width: 75px; height: 40px; border-right: 1px solid #000000; padding-top: 30px;}
+.box2{width: 120px; height: 40px; border-right: 1px solid #000000; padding-top: 30px;}
+.box3{width: 70px; height: 40px; border-right: 1px solid #000000; padding-top: 30px;}
+.box4{width: 70px; height: 40px; border-right: 1px solid #000000; padding-top: 30px;}
+.box5{width: 70px; height: 40px; border-right: 1px solid #000000; padding-top: 30px;}
+span{border: 1px solid #999999; padding: 5px;}
+
+
+#wrap>section>#num{background: rgba(255,0,0,0.3); width: 1420px; height: 150px;}
+
+
+
+/* ----------------------------주석----------------------------- */
+footer{width: 1420px; height: 200px; background: rgba(255,0,255,0.3); margin: 0 auto;}
