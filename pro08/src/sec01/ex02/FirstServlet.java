@@ -17,8 +17,7 @@ public class FirstServlet extends HttpServlet{
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		//response.sendRedirect("second");
-		response.addHeader("Refresh","3;url=second");
+		response.addHeader("Refresh","1;url=second");
 	}
 	
-
 }

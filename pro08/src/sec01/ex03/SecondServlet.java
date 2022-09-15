@@ -16,10 +16,27 @@ public class SecondServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
-		
-		out.println("<html><body>");
-		out.println("자바스크립트 location을 이용한 실습입니다.");
-		out.println("</html></body>");
-	}
 
+		out.println("<html><body>");
+		out.println("location을 이용한 redirect 실습입니다.");
+		out.println("</body></html>");		
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
