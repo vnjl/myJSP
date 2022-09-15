@@ -1,15 +1,16 @@
 package sec02.ex01;
 
-import java.util.List;
 import java.sql.Connection;
 import java.sql.Date;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.List;
 
-import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
+import javax.naming.Context;
 
 public class MemberDAO {
 	/*private static final String driver = "oracle.jdbc.driver.OracleDriver";
@@ -45,7 +46,7 @@ public class MemberDAO {
 			pstmt = con.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();			
 			while (rs.next()) {
-				// 조회한 레코드의 각 컬럼 값을 받아 온다
+				// 조회한 레코드의 각 컬럼 값을 받아 se온다
 				String id = rs.getString("id");
 				String pwd = rs.getString("pwd");
 				String name = rs.getString("name");
@@ -81,3 +82,21 @@ public class MemberDAO {
 		}		
 	}*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -23,11 +23,11 @@ public class MemberDAO {
 			connDB();
 			String query = "select * from t_member ";
 			//System.out.println(query);
-			System.out.println("prepareStatement: " + query);
+			System.out.println("prepareStatememt: " + query);
 			// SQL 문으로 회원 정보를 조회 while 문을 돌리기 위해서...
-			//ResultSet rs = pstmt.executeQuery(query);
+			//ResultSet rs = stmt.executeQuery(query);
 			pstmt = con.prepareStatement(query);
-			ResultSet rs = pstmt.executeQuery();
+			ResultSet rs = pstmt.executeQuery();			
 			while (rs.next()) {
 				// 조회한 레코드의 각 컬럼 값을 받아 온다
 				String id = rs.getString("id");
