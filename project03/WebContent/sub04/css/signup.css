@@ -1,0 +1,24 @@
+﻿body{background: /* url(../images/login.png) no-repeat center top;  */color: #333333;}
+	
+#section{width: 1420px; height: 1000px; margin: 0 auto;}
+	#signUpWrap{width: 750px; height: 700px; margin: 0 auto; margin-top: 150px;}
+	#title{font-size: 40px; border-bottom: 1px solid #666666; padding-bottom: 15px;}
+	.form{text-align: center; height: 625px; margin-top: 60px; border-bottom: 1px solid #666666;}
+		.form .id{width: 300px; text-align: center; line-height: 50px; padding-left: 60px; box-sizing: border-box; font-size: 20px; margin-bottom: 20px; margin-left: 35px;}
+		.form input{width: 50%; height: 50px; font-size: 25px; box-sizing: border-box;}
+		#idCheckBox>.idCheck{width: 750px; color: #999999; margin-top: 10px; float: right; margin-bottom: 20px;}
+		
+		.form .password{width: 300px; text-align: center; line-height: 50px; padding-left: 60px; box-sizing: border-box; font-size: 20px; margin-bottom: 20px; margin-left: 44px;}
+		.form input{width: 50%; height: 50px; font-size: 25px; box-sizing: border-box;}
+		#passwordCheckBox>.passwordCheck{width: 750px; color: #999999; margin-top: 10px; float: right; margin-bottom: 20px;}
+		
+		.form .passwordConfirm{width: 300px; text-align: center; line-height: 50px; padding-left: 60px; box-sizing: border-box; font-size: 20px; margin-bottom: 20px; margin-left: 67px;}
+		.form input{width: 50%; height: 50px; font-size: 25px; box-sizing: border-box;}
+		#passwordConfirmCheckBox>.passwordConfirmCheck{width: 750px; color: #999999; margin-top: 10px; float: right; margin-bottom: 20px;}
+		
+		.buttons{margin-top: 20px;}
+		.buttons a.resetButton{color: #333333; font-size: 25px; line-height: 80px; text-align: center;}
+			.resetButton{width: 200px; height: 80px; background: #aaaaaa; margin-left: 150px; border-radius: 5px;}
+		
+		.buttons a.saveButton{color: #ffffff; font-size: 25px; line-height: 80px; text-align: center;}
+			.saveButton{width: 200px; height: 80px; background: #0036d9; margin-left: 30px; border-radius: 5px;}

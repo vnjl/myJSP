@@ -7,6 +7,7 @@ import java.util.List;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,12 +17,13 @@ import javax.servlet.http.HttpServletResponse;
 import login.MemberDAO;
 import login.MemberVO;
 
-@WebServlet("/member4")
+@WebServlet("/member")
 public class MemberServlet extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doHandle(request, response);
+
 	}
 
 	@Override
@@ -33,6 +35,8 @@ public class MemberServlet extends HttpServlet{
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		//SQL문으로 조회할 MemberDAO 객체를 생성
+	
+		
 		MemberDAO dao=new MemberDAO();
 		PrintWriter out=response.getWriter();
 
@@ -50,6 +54,9 @@ public class MemberServlet extends HttpServlet{
 			 vo.setName(_name);
 			 vo.setEmail(_email);	
 			 dao.addMember(vo);
+		}else if(command!= null && command.equals("delMember")) {
+	    	  String id = request.getParameter("id");
+	    	  dao.delMember(id);			
 		}
 		List list=dao.listMembers();
 		out.print("<html><body>");
@@ -67,9 +74,9 @@ public class MemberServlet extends HttpServlet{
 		                +name+"</td><td>"
 		                +email+"</td><td>"
 		                +joinDate+"</td><td>"
-	                    +"&nbsp;</td></tr>");	 		
+		                +"<a href='/project03/member?command=delMember&id="+id+"'>삭제 </a></td></tr>");	 		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/project03/sub01/sub03/sub03.html'>새 회원 등록하기</a>");
+		out.print("<a href='/project03/sub04/sub04.html'>새 회원 등록하기</a>");
 	}
 }
