@@ -1,17 +1,16 @@
-package login;
+package sec05.ex01;
 
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
-
-import login.MemberVO;
 
 public class MemberDAO {
 	private Connection con;
@@ -28,8 +27,8 @@ public class MemberDAO {
         }
     }	
 	
-	public List<MemberVO> listMembers() {
-		List<MemberVO> list = new ArrayList<MemberVO>();
+	public List listMembers() {
+		List list = new ArrayList();
 		try {
 			con = dataFactory.getConnection();
 			String query = "select * from t_member ";
@@ -98,7 +97,8 @@ public class MemberDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}	
+	
 	public boolean isExisted(MemberVO memberVO) {
 		boolean result = false;
 		String id = memberVO.getId();
@@ -123,4 +123,23 @@ public class MemberDAO {
 		}
 		return result;
 	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

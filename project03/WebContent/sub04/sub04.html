@@ -8,6 +8,32 @@
 	<script src="../js/jquery-1.7.1.min.js"></script>
 	<script src="js/signup.js"></script>
 </script>
+<script>
+function fn_sendMember(){
+   // 자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다
+   var frmMember=document.frmMember;
+   var id=frmMember.id.value;
+   var pwd=frmMember.pwd.value;
+   var name=frmMember.name.value;
+   var email=frmMember.email.value;
+   if(id.length==0 ||id==""){
+      alert("아이디는 필수입니다.");
+   }else if(pwd.length==0 ||pwd==""){
+      alert("비밀번호는 필수입니다.");
+   }else if(name.length==0 ||name==""){
+      alert("이름은 필수입니다.");
+   }else if(email.length==0 ||email==""){
+      alert("이메일은 필수입니다.");
+   }else{
+      // 전송 방법을 post로 지정
+      frmMember.method="post";
+      // 서블릿 매핑 이름을 member3으로 지정
+      frmMember.action="member";
+      // 서블릿으로 전송
+      frmMember.submit();
+   } 
+}
+</script>
 </head>
 <body>
 	<header id="header">
@@ -486,7 +512,7 @@
 	<section id="section">
 		<div id="signUpWrap">
 			<div id="title">회원가입</div>
-			<form name="memberForm" method="post"  action="">
+			<form name="fn_sendMember" method="post"  action="">
 				<div class="form">
 					<div class="id">아이디</div>
 					<div class="idText">
@@ -520,8 +546,9 @@
 				</div>
 				<div class="buttons cf">
 					<a class="resetButton fl" href="#" title="다시하기">다시하기</a>
-					<a class="saveButton fl" href="#" title="가입하기" onclick="fn_sendMember()">가입하기</a>				
+					<a class="saveButton fl" href="../sub03/sub03.html" title="가입하기" onclick="fn_sendMember()">가입하기</a>				
 				</div>
+				<input  type="hidden" name="command" value="addMember"/>
 			</form>
 		</div>
 	</section>

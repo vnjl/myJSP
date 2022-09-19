@@ -27,6 +27,16 @@
 			element.addClass(guideClass);
 		}
 	});
+// ------------------------------------------------------------
+	$('.save_button').click(function(e){
+		e.preventDefault();
+		check_input();
+	});
+	$('.reset_button').click(function(e){
+		e.preventDefault();
+		reset_form();
+	});
+// --------------------------------------------------------------
 
 // ------------------------------------------------------------
 	box1=$('.twitter');

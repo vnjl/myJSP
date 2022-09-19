@@ -11,19 +11,26 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/get")
+//@WebServlet("/get")
 public class GetCookieValue extends HttpServlet{
-
-	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html;charset=utf=8");
-		PrintWriter out = response.getWriter();
-		Cookie[] allValues=request.getCookies();
-		for(int i=0; i<allValues.length; i++) {
-			if(allValues[i].getName().equals("cookieTest")) {
-				out.println("<h2>Cookie 값 가져오기: " + URLDecoder.decode(allValues[i].getValue(),"utf-8"));
-			}
-		}
+		response.setContentType("text/html;charset=utf-8");
+	      PrintWriter out=response.getWriter();
+	      Cookie[] allValues=request.getCookies();
+	      for(int i=0; i<allValues.length;i++){
+	         if(allValues[i].getName().equals("cookieTest")){
+		      out.println("<h2>Cookie 값 가져오기 : "+URLDecoder.decode(allValues[i].getValue(),"utf-8"));
+	         }
+	      }
+
 	}
-	
 }
+
+
+
+
+
+
+
+
+

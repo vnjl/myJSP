@@ -78,6 +78,6 @@ public class MemberServlet extends HttpServlet{
 		                +"<a href='/project03/member?command=delMember&id="+id+"'>삭제 </a></td></tr>");	 		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/project03/sub04/sub04.html'>새 회원 등록하기</a>");
+		out.print("<a href='/project03/login'>새 회원 등록하기</a>");
 	}
 }
