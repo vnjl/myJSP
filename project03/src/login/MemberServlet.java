@@ -35,6 +35,7 @@ public class MemberServlet extends HttpServlet{
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		//SQL문으로 조회할 MemberDAO 객체를 생성
+		
 	
 		
 		MemberDAO dao=new MemberDAO();
