@@ -24,10 +24,20 @@
 	아이디를 입력하세요.<br>
 	<a href="/pro12/login.html">로그인하기</a>
 <%
-	}else{ 
+	}else{
+		if(user_id.equals("admin")){
 %>
-	<h1>아이디: <%= user_id %></h1>
+	<h1>관리자로 로그인 했습니다.</h1>
+	<form>
+		<input type="button" value="회원정보 삭제하기">
+		<input type="button" value="회원정보 수정하기">
+	</form>
 <%
+		}else{
+%>
+	<h1>환영합니다. <%= user_id %></h1>
+<%
+		}
 	}
 %>
 </body>
