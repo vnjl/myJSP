@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="../css/common.css"/>
 	<script src="../js/jquery-1.7.1.min.js"></script>
 	<script src="js/signup.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
 </script>
 <script>
 function fn_sendMember(){
@@ -508,49 +510,78 @@ function fn_sendMember(){
 			</ul>
 		</nav>
 	</header>
+<script>
+  var userid = '';
+</script>
+    		
 	<!------------------------------- section ------------------------------------->
-	<section id="section">
-		<div id="signUpWrap">
-			<div id="title">회원가입</div>
-			<form name="fn_sendMember" method="post"  action="">
-				<div class="form">
-					<div class="id">아이디</div>
-					<div class="idText">
-						<label>
-							<input autocomplete="off" maxlength="11" type="text" name="id">
-						</label>
-					</div>		
-					<div id="idCheckBox">
-						<div class="idCheck">아이디는 5~11자의 영문 소문자와 숫자만 사용 가능합니다.</div>
+	<section id="section" class="section">
+		<div id="signup_content">
+			<div id="join_box" class="join_box">
+				<span class="signup_title">회원 가입</span>
+				<form name="member_form" method="post" action="sub_mem_insert.php">
+
+<script>
+/* 중복 아이디 체크 상태 및 현재 입력한 아이디 변수 */
+var check_id_var = false;
+var current_check_id;
+</script>
+									
+					<div class="form id">
+						<div class="col1">아이디</div>
+						<div class="col2">
+							<label>
+								<input autocomplete="off" maxlength="11" type="text" name="id">
+								<div class="id_image info_image"></div>
+							</label>
+						</div>
+						<div class="id_info_box">
+							<div class='id_info signup_info'></div>
+							<div class="id_check_text">아이디 확인중입니다.</div>
+						</div>								
 					</div>
-				
-					<div class="password">비밀번호</div>
-					<div class="passwordText">
-						<label>
-							<input autocomplete="off" maxlength="15" type="password" name="pass">
-						</label>
-					</div>		
-					<div id="passwordCheckBox">
-						<div class="passwordCheck">비밀번호는 8~15자의 영문 소문자와 숫자를 조합하여야 사용 가능합니다.</div>
+					<div class="form password">
+						<div class="col1">비밀번호</div>
+						<div class="col2">
+							<label>
+								<input autocomplete="off" maxlength="15" type="password" name="pass">
+								<div class="pass_image info_image"></div>
+							</label>
+						</div>
+						<div class="password_info signup_info"></div>
 					</div>
-					
-					<div class="passwordConfirm">비밀번호 확인</div>
-					<div class="passwordConfirmText">
-						<label>
-							<input autocomplete="off" maxlength="15" type="password" name="passConfirm">
-						</label>
-					</div>		
-					<div id="passwordConfirmCheckBox">
-						<div class="passwordConfirmCheck">비밀번호를 다시 한번 입력해 주세요.</div>
+					<div class="form pass_confirm">
+						<div class="col1">비밀번호 확인</div>
+						<div class="col2">
+							<label>
+								<input autocomplete="off" maxlength="15" type="password" name="pass_confirm">
+								<div class="pass_confirm_image info_image"></div>
+							</label>
+						</div>
+						<div class="pass_confirm_info signup_info"></div>
 					</div>
-				</div>
-				<div class="buttons cf">
-					<a class="resetButton fl" href="#" title="다시하기">다시하기</a>
-					<a class="saveButton fl" href="../sub03/sub03.html" title="가입하기" onclick="fn_sendMember()">가입하기</a>				
-				</div>
-				<input  type="hidden" name="command" value="addMember"/>
-			</form>
-		</div>
+					<div class="form name">
+						<div class="col1">이름</div>
+						<div class="col2">
+							<input autocomplete="off" maxlength="5" type="text" name="name">
+						</div>
+						<div class="name_info signup_info"></div>
+					</div>
+					<div class="form email">
+						<div class="col1">이메일</div>
+						<div class="col2 cf">
+							<input autocomplete="off" maxlength="35" type="text" name="email" class="fl">
+						</div>
+						<div class="email_info signup_info"></div>
+					</div>
+					<div class="bottom_line"></div>
+					<div class="buttons cf">
+						<a class="reset_button fl" href="#" title="다시하기">다시하기</a>
+						<a class="save_button fl" href="#" title="가입하기">가입하기</a>							
+					</div>
+				</form>
+			</div> <!-- join_box -->
+		</div> <!-- main_content -->
 	</section>
 	<!-------------------------------------- footer -------------------------------->
 	<footer id="footer">

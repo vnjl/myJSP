@@ -1,11 +1,9 @@
-package login;
+package sec01;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Date;
 import java.util.List;
-import java.sql.Timestamp;
-import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,8 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import login.MemberDAO;
-import login.MemberVO;
+import sec01.MemberVO;
 
 @WebServlet("/member")
 public class MemberServlet extends HttpServlet{
@@ -23,7 +20,6 @@ public class MemberServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doHandle(request, response);
-
 	}
 
 	@Override
@@ -34,15 +30,16 @@ public class MemberServlet extends HttpServlet{
 	private void doHandle(HttpServletRequest request,HttpServletResponse response)  throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
-		//SQL문으로 조회할 MemberDAO 객체를 생성
-		
-	
-		
-		MemberDAO dao=new MemberDAO();
 		PrintWriter out=response.getWriter();
 
+		MemberDAO dao=new MemberDAO();	
+		List membersList = dao.listMembers();
+		
 		String command=request.getParameter("command");
-	      
+		
+		request.setAttribute("membersList", membersList);
+		RequestDispatcher dispatch = request.getRequestDispatcher("viewMembers");
+		dispatch.forward(request, response);
 		if(command!= null && command.equals("addMember")){
 			 String _id=request.getParameter("id");
 			 String _pwd=request.getParameter("pwd");
@@ -75,9 +72,20 @@ public class MemberServlet extends HttpServlet{
 		                +name+"</td><td>"
 		                +email+"</td><td>"
 		                +joinDate+"</td><td>"
-		                +"<a href='/project03/member?command=delMember&id="+id+"'>삭제 </a></td></tr>");	 		
+		                +"<a href='/project03/member?command=delMember&id="+id+"'>삭제 </a></td></tr>");		
 		}
 		out.print("</table></body></html>");
-		out.print("<a href='/project03/login'>새 회원 등록하기</a>");
+		out.print("<a href='/project03/sub04/sub04.jsp'>새 회원 등록하기</a>");
 	}
 }
+
+
+
+
+
+
+
+
+
+
+

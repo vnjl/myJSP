@@ -1,4 +1,4 @@
-package login;
+package sec01;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -10,8 +10,6 @@ import java.util.List;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
-
-import login.MemberVO;
 
 public class MemberDAO {
 	private Connection con;
@@ -38,7 +36,7 @@ public class MemberDAO {
 			pstmt = con.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();			
 			while (rs.next()) {
-				// 조회한 레코드의 각 컬럼 값을 받아온다
+				// 조회한 레코드의 각 컬럼 값을 받아 se온다
 				String id = rs.getString("id");
 				String pwd = rs.getString("pwd");
 				String name = rs.getString("name");
@@ -98,29 +96,23 @@ public class MemberDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
-	public boolean isExisted(MemberVO memberVO) {
-		boolean result = false;
-		String id = memberVO.getId();
-		String pwd = memberVO.getPwd();		
-		try {
-			con = dataFactory.getConnection();
-			//decode() 함수를 이용해 id와 pwd가 존재하면 true, 존재하지 않으면 false를 return
-			String query = "select decode(count(*),1,'true','false') as result from t_member";
-			query += " where id=? and pwd=?";
-			System.out.println(query);
-			//파라메터로 전달된 id와 pwd를 이용해 데이터베이스에 있는지 조회
-			pstmt = con.prepareStatement(query);
-			pstmt.setString(1, id);
-			pstmt.setString(2, pwd);	
-			ResultSet rs = pstmt.executeQuery();
-			//커서를 첫번째 레코드로 위치시킵니다.
-			rs.next(); 
-			result = Boolean.parseBoolean(rs.getString("result"));
-			System.out.println("result=" + result);			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return result;
-	}
+	}	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

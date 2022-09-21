@@ -36,7 +36,7 @@ public class MemberDAO {
 			pstmt = con.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();			
 			while (rs.next()) {
-				// 조회한 레코드의 각 컬럼 값을 받아 se온다
+				// 조회한 레코드의 각 컬럼 값을 받아온다
 				String id = rs.getString("id");
 				String pwd = rs.getString("pwd");
 				String name = rs.getString("name");
