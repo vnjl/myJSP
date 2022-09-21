@@ -1,0 +1,28 @@
+﻿html{overflow-y: scroll;}
+*{margin: 0; padding: 0;}
+img{border: 0;}
+body{background: ; font-size: 26px; color: #333333;}
+ul, li, dd, dt, dl{list-style: none;}
+a{text-decoration: none;}
+.fl{float: left;}
+.fr{float: right;}
+.cb{clear: both;}
+.cf:after{content: ''; display: block; clear: both;}
+
+#header{background: #000000; width: 1420px; height: 154px; margin: 0 auto;}
+	#main{background: #987465; width: 1420px; height: 87px; margin: 0 auto;}
+	#menu{background: #06ff1f; width: 1420px; height: 70px; margin: 0 auto;}
+
+	
+#section{background: #000000; width: 1420px; height: 1884px; margin: 0 auto;}
+	#top{background: #ff0000; width: 1420px; height: 120px; margin-bottom: 30px;}
+	#infor{background: #00ff00; width: 1420px; height: 220px; margin-bottom: 30px;}
+	#install{background: #0000ff; width: 1420px; height: 150px; margin-bottom: 80px;}
+	#login{background: #dadada; width: 1420px; height: 420px; margin-bottom: 70px;}
+	#note{background: #4a35d0; width: 1420px; height: 365px; margin-bottom: 55px;}
+	#notice{background: #d156a4; width: 1420px; height: 365px; margin-bottom: 145px;}
+
+	
+#footer{background: #000000; width: 1420px; height: 200px; margin: 0 auto;}
+	#personal{float: left; background: #a15b54; width: 1010px; height: 200px; margin: 0 auto;}
+	#global{float: left; background: #132845; width: 410px; height: 200px; margin: 0 auto;}

@@ -1,0 +1,16 @@
+﻿a{text-decoration: none;}
+
+.pop{width: 100%; height: 404px;}
+
+	.countWrap{width: 400px; text-align:center; padding-bottom: 10px;}
+	.pop>.popupInner>.popContent>p{margin-left: 25px; margin-right: 25px; margin-bottom: 20px; font-size: 16px;}
+	.pop>.popupInner>.popContent>p.popupTitle{font-size: 20px; font-weight: bold; margin-bottom: 20px;}	
+	
+	.popupInner{width: 400px; height: 400px; margin: 0 auto; background: #ffffff; border: 2px solid #333333; text-align: center;}
+	.popupInner>.popTitle{height: 45px; font-size: 24px; text-align: center; background: #2d71c4; line-height: 45px;}		
+	.popupInner>.popTitle{color: #ffffff;}
+	.popupInner>p{width: 400px; text-align: center; margin-bottom: 10px;}
+	.popupInner span{float: left;}
+	.popupInner>button{float: right; background: #2d71c4; color: #ffffff; margin-right: 20px; padding: 7px; border: none; margin-top: 20px;}
+	.popupInner>.client{font-size: 16px; border: 1px solid #ffffff; margin-left: 20px; margin-top: 20px;}
+	.popupInner>.client>a{background: #0000ff; color: #ffffff; padding: 3px;}

@@ -1,0 +1,65 @@
+﻿@import url(common.css);
+body{background: /* url(../images/QnA2.png) no-repeat center top; */ color: #333333;}
+#boardH3 {display:none;}	
+
+#section{width: 100%; height: 1510px; margin: 0 auto;}
+	#way{width: 100%; height: 67px; margin: 0 auto; background: #195dae;}
+	.wayText{width: 1420px; height: 65px;}
+		.wayText{font-size: 20px; color: #ffffff; width: 1420px; height: 67px; padding-top: 5px; padding-left: 25px; margin: 0 auto;}
+		.wayText>p{font-size: 20px; color: #ffffff; width: 700px; height: 67px; padding-top: 15px; padding-left: 25px;}
+		.wayText>p>a.common{font-size: 20px; color: #ffffff;}
+	#title{width: 1420px; height: 200px; margin: 0 auto;}
+	.accountTitleBox{margin-top: 100px; margin-left: 10px; border-bottom: 2px solid #dadada; padding-bottom: 25px;}
+		span.boardtitleText{font-size: 40px;}
+		.searchSelect {font-size:17px; padding:4px; margin-right: 5px;}
+		.searchInput {font-size:17px; width:220px; padding:5px; border: 1px solid #cbcdcc;}
+		.searchSubmit {padding:0; margin-left:5px; margin-right:10px; cursor:pointer; background-color:#fdfdfd; border:none;}
+
+
+#infoText{width: 1420px; margin: 0 auto;}
+	.infoSearch {width: 1420px; margin: 0 auto; padding: 0px 10px;}
+	.pageInfo {float:left; line-height: 30px; font-size:16px;}
+
+
+#board {width:1420px; margin: 0 auto;}
+	#board>li {font-size:17px; line-height: 60px; border-top:1px solid #ecf0f1; border-bottom:1px solid #ecf0f1; text-align:center;}
+	#board>.active_category {background-color:#3579d4;}
+
+
+	#board>#boardSubjectLi {background-color: #f9f9f9; border-top: 2px solid #3579d4; font-size:18px; font-weight:bold;}
+	#board>.writeLi:hover {background-color:#d0e8ff;}
+	.boardNum {width:8%;}
+	.boardTitle {width:65%;}
+	.boardRightBox {width:25%;}
+	.boardAuthor {width:33.3%;}
+	.boardView {width:33.3%}
+	.boardDate {width:33.3%;}
+
+
+	.boardNotice {padding: 3px 10px; border-radius: 2px; color:#fdfdfd; font-weight: bold; background-color: #b33820;}
+	.newWrite {padding: 3px 8px; border-radius: 2px; color:#fdfdfd; font-weight: bold; background-color: #fa3e3e; margin-right: 10px; font-size:16px;}
+
+
+	#board>.writeLi:hover {background-color:#edf3fb;}
+	.writeListTitle {text-align:left; width:60%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+	.writeListTitle:hover {cursor:pointer;}
+	.writeListRightBox {width:25%;}
+	.writeListAuthor {width:33.3%; text-align:left; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+	.writeListView {width:33.3%}
+	.titleCategory {display:block; width: 60%; margin:0 auto; margin-top:7.5px; height: 40px; line-height:40px; text-align:center; background-color:#fafafa; border: 1px solid #6ab7ff; border-radius:2px;}
+	.replyArrow {width: 25px; vertical-align:middle;}
+
+
+	.pageNumber {margin-top:40px;}
+	.pageNumberInner {margin:0 auto; width:389px;}
+	.pageNumberInner>li {display:block; float:left;}
+	.pageNumberInner>li>a {display:block; font-size:17px; line-height: 30px; float:left; text-align:center; margin: 0 2px; width: 30px; height: 30px; border-radius:1px;}
+	.currentPage, .pageNumberInner>li>a:hover {color:#fdfdfd; background-color: #3579d4;;}
+
+
+
+	.writeButton {text-align: center; font-size: 18px; border-radius:2px; padding:8px 20px; margin-left:10px; border: 1px solid #3579d4; background-color: #3579d4; color:#fdfdfd; margin-right: 15px; cursor:pointer;}
+
+		
+
+	

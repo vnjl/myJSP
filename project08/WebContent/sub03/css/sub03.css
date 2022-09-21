@@ -1,0 +1,77 @@
+﻿body{background: /* url(../images/login.png) no-repeat center top;  */color: #333333;}
+	
+#section{width: 1420px; height: 1884px; margin: 0 auto;}
+	#top{width: 1420px; height: 120px; margin-bottom: 30px; border-bottom: 2px solid #dadada; }
+		#topText>p{float: left; margin-top: 40px; font-size: 40px; box-sizing: border-box;}
+		
+	#infor{width: 1420px; height: 213px; margin-bottom: 30px; background: #f7f7f7;}
+		#infor>.inforText{float: right; width: 825px; height: 220px; margin-right: 115px; margin-top: 45px; font-size: 20px; box-sizing: border-box;}
+		
+	#install{width: 1357px; height: 100px; margin-bottom: 70px;}
+		#install{padding: 25px 30px; border:1px solid #dcdcdc; margin-bottom: 80px; font-size: 19px;}
+		.installText{width: 1200px; line-height: 30px;}
+		.installLink{color: #3579d4;}	
+		.os{display: block; width: 1200px; color:#d48100; margin-top: 15px; letter-spacing: -1px;}
+
+#loginWrap{width: 1200px; height: 520px; border: 2px solid #555555; background: #ffffff; margin: 0 auto 0; padding: 70px 70px 0 70px; box-sizing: border-box; text-align: center;}
+	#loginWrap h2{font-size: 40px; color: #555555; margin-bottom: 10px;}
+	#loginWrap h2 span{font-weight: bold; color: #00a3ff; margin-bottom: 10px;}
+	#loginWrap p{font-size: 14px; font-weight: bold; color: #456078; margin-bottom: 77px;}
+	
+
+#HeadLeft{width: 490px; margin-right: 10px; margin-left: 30px;}
+	#HeadLeft h4{width: 490px; padding: 15px 0; border: 1px solid #d7d7d7; text-align: center; font-size: 24px; color: #3f546b; background: #ffffff;}
+	#HeadLeft #LeftButton{width: 490px; height: 240px;border: 1px solid #d7d7d7; text-align: center; border-top: none;  background: url(../images/bg_contbox.png) repeat; padding-top: 60px;}
+		#LeftButton .Button1{background: #0e96dd; text-decoration: none; font-size: 14px; color: #ffffff; padding: 25px 25px; border-radius: 5px; margin-right: 20px; font-weight: blod;}
+		#LeftButton .Button2{background: #0e96dd; text-decoration: none; font-size: 14px; color: #ffffff; padding: 25px 40px; border-radius: 5px; font-weight: bold;}
+		#LeftButton p{padding-top: 70px; width: 350px; font-size: 14px;color: 333333; text-align: left; margin: 0 auto; line-height: 20px; margin-bottom: 40px;}
+		#LeftButton .Button3{padding: 5px 10px; border: 1px solid #d7d7d7; font-weight: bold; text-decoration: none; font-size: 14px; color: #333333; border-radius: 5px; background: #ffffff;}	
+		
+#HeadRight{width: 490px; float: left;}
+	#HeadRight h4{width: 490px; padding: 15px 0; border: 1px solid #d7d7d7; text-align: center; font-size: 24px; color: #3f546b; background: #ffffff;}
+	#HeadRight #RightButton{width: 490px; height: 300px; border: 1px solid #d7d7d7; text-align: center; border-top: none;  background: #ffffff;}
+		#loginButton{float: left; margin-left: 94px; margin-right: 11px; margin-top: 84px;}
+		#loginButton input{font-family: 'Nanum Gothic'; font-size: 14px; width: 170px; height: 35px; display: block; margin-bottom: 10px; border: 1px solid #d7d7d7; padding-left: 10px;}
+		#login{float: left; background: #0e96dd; border-radius: 5px; width: 109px; height: 82px; cursor: pointer; margin-top: 84px;}
+		#login a{text-decoration: none;font-size: 15px; color: #ffffff; font-weight: 600; line-height: 84px; }
+		#find{clear: both; margin-top: 150px;}
+		#find a{padding: 5px 10px; border: 1px solid #d7d7d7; font-weight: 600; text-decoration: none; font-size: 14px; color: #333333; border-radius: 5px; background: #ffffff;}
+		.gray{color: #999999;}
+		
+	#note{width: 1420px; height: 365px; margin-bottom: 55px;}
+		.safeGuide {width:1420px; border-bottom:1px solid #dcdcdc; padding: 35px 0; margin-bottom:42px;}
+		.safeGuideTitle {padding-left:20px; margin-bottom:0px;}
+		.guideTitleImg {width:20px; height:20px; background: url(../images/back.png) no-repeat -10px -10px; margin-top:3.5px; margin-right:10px;}
+		.guideTitleText {font-size: 26px; line-height:27px; margin-bottom: 71px;}
+		.guideTitleText>span {color:#6b6666; font-weight:bold;}
+		.guideCon {width:25%; text-align:center; line-height:26px;}
+		.guideCon>p {font-size: 18px; margin-left: 40px;}
+		.guideCon>p>span {color:#4a6bca;}
+		.guideConImg {width: 150px; height: 130px; margin:0 auto; margin-bottom:15px;}
+		.guideConImg1 {background: url(../images/back2.png) no-repeat 25% 100%;}
+		.guideConImg2 {background: url(../images/back2.png) no-repeat -517px -58px;}
+		.guideConImg3 {background: url(../images/back2.png) no-repeat -598px -58px;}
+		.guideConImg4 {background: url(../images/back2.png) no-repeat -679px -58px;}
+	#notice{width: 1420px; height: 365px; margin-bottom: 145px;}
+		.userGuide {width:1420px; margin-bottom:42px;}
+		
+		.qanda {padding: 31px 0;width: 50%; box-sizing:border-box;}
+		.userTitle {font-size: 25px; height:30px; line-height:30px; margin-right:10px; margin-bottom:20px;}
+		.moreQanda {display:block;}
+		.plusIconGray {width:28px; height:30px; margin-top:4px; margin-right:100px;}
+		.qandaBoard>li {width:80%; line-height: 40px; height:25px; margin-bottom: 10px; font-size: 20px;}
+		.qandaBoard>.lastQanda {margin-bottom: 0px;}
+		.qandaBoard>li>a {width: 100%; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+		.qandaBoard>li>a:before {content:""; display:block; width:3px; height:3px; background-color:#555555; margin-top:11px; margin-right: 10px; float:left;}
+		
+		.center {padding: 29px 0; padding-left: 85px; width: 50%; box-sizing:border-box; border-left:1px solid #dcdcdc;}
+		.centerTitle {display: block; margin-bottom:10px;}
+		.centerDay {display:block; font-size: 16px; color:#777777; margin-top:10px;}
+		.centerImg {width: 55px; height: 55px; margin-top:15px; margin-right: 30px;}
+		.mainLocation, .mainNum {display: block; color: #4a6bcc;}
+		.mainLocation {height:25px; line-height:25px; margin-top:15px; font-size: 20px;}
+		.mainNum {font-size: 31px;}
+		.centerSubText {display: block; height: 25px; line-height:25px;}
+		.marginEdit {margin-top:15px;}
+		.centerLi {margin-bottom: 10px; font-size: 20px;}
+		.centerLastLi {margin-bottom: 0px;}
