@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="../css/common.css"/>
 	<script src="../js/jquery-1.7.1.min.js"></script>
 	<script src="js/signup.js"></script>
-</script>
 <script>
 function fn_sendMember(){
    // 자바스크립트에서 <form> 태그의 name으로 접근해 입력한 값들을 얻는다
@@ -31,7 +30,7 @@ function fn_sendMember(){
       // 전송 방법을 post로 지정
       frmMember.method="post";
       // 서블릿 매핑 이름을 member3으로 지정
-      frmMember.action="member";
+      frmMember.action="/project08/member";
       // 서블릿으로 전송
       frmMember.submit();
    } 
@@ -42,72 +41,31 @@ function fn_sendMember(){
  <%@ include file = "/header.jsp" %>
 	<!------------------------------- section ------------------------------------->
 	<section id="section" class="section">
-		<div id="signup_content">
-			<div id="join_box" class="join_box">
-				<span class="signup_title">회원 가입</span>
-				<form name="member_form" method="post" action="sub_mem_insert.php">
-
-<script>
-/* 중복 아이디 체크 상태 및 현재 입력한 아이디 변수 */
-var check_id_var = false;
-var current_check_id;
-</script>
-									
-					<div class="form id">
-						<div class="col1">아이디</div>
-						<div class="col2">
-							<label>
-								<input autocomplete="off" maxlength="11" type="text" name="id">
-								<div class="id_image info_image"></div>
-							</label>
-						</div>
-						<div class="id_info_box">
-							<div class='id_info signup_info'></div>
-							<div class="id_check_text">아이디 확인중입니다.</div>
-						</div>								
-					</div>
-					<div class="form password">
-						<div class="col1">비밀번호</div>
-						<div class="col2">
-							<label>
-								<input autocomplete="off" maxlength="15" type="password" name="pass">
-								<div class="pass_image info_image"></div>
-							</label>
-						</div>
-						<div class="password_info signup_info"></div>
-					</div>
-					<div class="form pass_confirm">
-						<div class="col1">비밀번호 확인</div>
-						<div class="col2">
-							<label>
-								<input autocomplete="off" maxlength="15" type="password" name="pass_confirm">
-								<div class="pass_confirm_image info_image"></div>
-							</label>
-						</div>
-						<div class="pass_confirm_info signup_info"></div>
-					</div>
-					<div class="form name">
-						<div class="col1">이름</div>
-						<div class="col2">
-							<input autocomplete="off" maxlength="5" type="text" name="name">
-						</div>
-						<div class="name_info signup_info"></div>
-					</div>
-					<div class="form email">
-						<div class="col1">이메일</div>
-						<div class="col2 cf">
-							<input autocomplete="off" maxlength="35" type="text" name="email" class="fl">
-						</div>
-						<div class="email_info signup_info"></div>
-					</div>
-					<div class="bottom_line"></div>
-					<div class="buttons cf">
-						<a class="reset_button fl" href="#" title="다시하기">다시하기</a>
-						<a class="save_button fl" href="#" title="가입하기">가입하기</a>							
-					</div>
-				</form>
-			</div> <!-- join_box -->
-		</div> <!-- main_content -->
+	  <form name="frmMember">
+	  <table>
+		   <th>회원 가입창</th>
+		  <tr>
+			<td>아이디</td>
+			<td><input type="text" name="id"></td>
+		  </tr>
+		  <tr>
+			<td>비밀번호</td>
+			<td><input type="password" name="pwd"></td>
+		  </tr>
+		  <tr>
+			<td>이름</td>
+			<td><input type="text" name="name"></td>
+		  </tr>
+		    <tr>
+			<td>이메일</td>
+			<td><input type="text" name="email"></td>
+		  </tr>
+	  </table>
+	   <input type="button" value="가입하기" onclick="fn_sendMember()">
+	   <input type="reset" value="다시입력">
+	   <!-- <hidden> 태그를 이용해 서블릿에게 회원 등록임을 알린다 -->
+	   <input  type="hidden" name="command" value="addMember" />	
+	  </form>
 	</section>
 	<%@ include file = "/footer.jsp" %>
 </body>

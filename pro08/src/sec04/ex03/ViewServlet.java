@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
-//@WebServlet("/viewMembers")
+@WebServlet("/viewMembers")
 public class ViewServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request,HttpServletResponse response)
 		                                            throws ServletException, IOException {

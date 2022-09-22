@@ -7,6 +7,6 @@
 <title>404 예외 처리 페이지</title>
 </head>
 <body>
-	<img src="../images/404.png">
+	<img src="/pro08/image/404.png">
 </body>
 </html>

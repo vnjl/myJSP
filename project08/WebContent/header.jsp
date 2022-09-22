@@ -1,14 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-	<link rel="stylesheet" href="css/common.css"/>
-	<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="js/header.js"></script>
-</head>
+
 <body>
 	<header id="header">
 		<div id="main">
