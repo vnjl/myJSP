@@ -18,7 +18,7 @@
 <%
 	}
 %>
-	<form action="result2.jsp" method="post">
+	<form action="sub03Fail.jsp" method="post">
 		아이디: <input type="text" name="userID"><br>
 		비밀번호: <input type="password" name="userPW"><br>
 		<input type="submit" value="로그인">

@@ -5,6 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>500 예외 처리 페이지</title>
+	<link rel="stylesheet" href="/project08/css/common.css"/>
+	<script src="../js/jquery-1.7.1.min.js"></script>
+	<script src="js/sub03.js"></script>
 </head>
 <body>
 <%@ include file = "/header.jsp" %>

@@ -18,7 +18,7 @@
 		</div>
 		
 		<div id="infor">
-			<img src="../images/information.PNG" alt="informationImg" class="fl"/>
+			<img src="../images/information.png" alt="informationImg" class="fl"/>
 			<div class="inforText">
 				<ul>
 					<li>&middot;신한은행은 보안강화 등을 이유로 보안카드번호(3개 이상 또는 전체)를 요구하지 않습니다.</li>
@@ -52,9 +52,13 @@
 					<h4>ID 로그인</h4>
 					<div id="RightButton">
 						<form action="sub03Fail.jsp" method="post">
-							<input type="text" name="userID"><br>
-							<input type="password" name="userPW">
-							<input type="submit" value="로그인">
+							<div id="loginButton">
+								<input type="text" class="guideText" name="userID" value="아이디"/>
+								<input type="password" class="guideText" name="userPW" value="비밀번호"/>
+							</div>
+							<div>
+								<input type="submit" id="login" value="로그인">
+							</div>
 						</form>
 						<div id="find">
 							<a href="../sub04/sub04.html" target="blank">아이디 찾기</a>

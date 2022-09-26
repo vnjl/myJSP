@@ -1,4 +1,4 @@
-﻿body{background: /* url(../images/login.png) no-repeat center top;  */color: #333333;}
+body{background: /* url(../images/login.png) no-repeat center top;  */color: #333333;}
 	
 #section{width: 1420px; height: 1884px; margin: 0 auto;}
 	#top{width: 1420px; height: 120px; margin-bottom: 30px; border-bottom: 2px solid #dadada; }
@@ -33,7 +33,7 @@
 		#loginButton{float: left; margin-left: 94px; margin-right: 11px; margin-top: 84px;}
 		#loginButton input{font-family: 'Nanum Gothic'; font-size: 14px; width: 170px; height: 35px; display: block; margin-bottom: 10px; border: 1px solid #d7d7d7; padding-left: 10px;}
 		#login{float: left; background: #0e96dd; border-radius: 5px; width: 109px; height: 82px; cursor: pointer; margin-top: 84px;}
-		#login a{text-decoration: none;font-size: 15px; color: #ffffff; font-weight: 600; line-height: 84px; }
+		#login p{text-decoration: none;font-size: 15px; color: #ffffff; font-weight: 600; line-height: 84px; }
 		#find{clear: both; margin-top: 150px;}
 		#find a{padding: 5px 10px; border: 1px solid #d7d7d7; font-weight: 600; text-decoration: none; font-size: 14px; color: #333333; border-radius: 5px; background: #ffffff;}
 		.gray{color: #999999;}
