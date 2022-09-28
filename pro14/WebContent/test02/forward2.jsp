@@ -3,15 +3,15 @@
 <%
 	request.setCharacterEncoding("utf-8");
 	MemberBean member = new MemberBean("lee", "1234", "이순신", "lee@test.com");
-	request.setAttribute("member",member);
-%>
+	request.setAttribute("member", member);
+%>      
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>forward2</title>
+	<meta charset="UTF-8">
+	<title>forward2</title>
 </head>
 <body>
-	<jsp:forward page="member2.jsp"/>
+	<jsp:forward page="member2.jsp" />
 </body>
 </html>

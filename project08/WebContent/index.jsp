@@ -18,14 +18,14 @@
 <body onLoad="ddaycount()">
 	<span class="quickToggle"><span class="indent">퀵메뉴닫기</span></span>
 	<div class="quickmenu">
-		<h3 class="quickhead"><a href="/project08/sub03/sub03.html"><img src="images/quick_head.png" alt="Quickmenu"/></a></h3>
+		<h3 class="quickhead"><a href="/project08/sub03/sub03.jsp"><img src="images/quick_head.png" alt="Quickmenu"/></a></h3>
 		<ul class="quickIcon">
-			<li class="quick01"><a href="/project08/sub01/sub01.html"><img src="images/" alt=""/></a></li>
+			<li class="quick01"><a href="/project08/sub01/sub01.jsp"><img src="images/" alt=""/></a></li>
 		</ul>
 		<ul class="quickBt">
-			<li><a href="/project08/sub02/sub02.html"><img src="images/login_btn.png" alt="login"/></a></li>
-			<li><a href="/project08/sub03/sub03.html"><img src="images/join_btn.png" alt="join"/></a></li>
-			<li><a href="/project08/sub01/sub01.html"><img src="images/admin2_btn.png" alt="admin"/></a></li>
+			<li><a href="/project08/sub02/sub02.jsp"><img src="images/login_btn.png" alt="login"/></a></li>
+			<li><a href="/project08/sub03/sub03.jsp"><img src="images/join_btn.png" alt="join"/></a></li>
+			<li><a href="/project08/sub01/sub01.jsp"><img src="images/admin2_btn.png" alt="admin"/></a></li>
 		</ul>
 	</div>
 <%@ include file = "/popup.jsp" %>
@@ -107,20 +107,20 @@
 			</div>
 		</div>
 		<div class="btn">
-			<div class="login"><a href="/project08/sub03/sub03.html" title="로그인"><img src="images/loginBtn.PNG" alt="login"/></a></div>
-			<div class="cert"><a href="/project08/sub03/sub03.html" title="인증센터"><img src="images/cert.PNG" alt="login"/></a></div>
+			<div class="login"><a href="/project08/sub03/sub03.jsp" title="로그인"><img src="images/loginBtn.PNG" alt="login"/></a></div>
+			<div class="cert"><a href="/project08/sub03/sub03.jsp" title="인증센터"><img src="images/cert.PNG" alt="login"/></a></div>
 		</div>
 		</div> <!-- id="top" -->
 		
 		<div id="service">
 			<div id="mainService" class="fl">
-			<div class="add fr"><a href="/project08/sub03/sub03.html">더보기</a></div>
-				<div class="service"><a href="/project08/sub01/sub01.html">주요서비스</a></div>
+			<div class="add fr"><a href="/project08/sub03/sub03.jsp">더보기</a></div>
+				<div class="service"><a href="/project08/sub01/sub01.jsp">주요서비스</a></div>
 				<ul>
-					<li><a href="/project08/sub03/sub03.html" title="전계좌조회" class="fl"><img src="images/inquiry.PNG" alt="inquiry"/></a></li>
-					<li><a href="/project08/sub02/sub02.html" title="계좌이체" class="fl"><img src="images/transfer.PNG" alt="transfer"/></a></li>
-					<li><a href="/project08/sub03/sub03.html" title="간편조회서비스" class="fl"><img src="images/simple.PNG" alt="simple"/></a></li>
-					<li><a href="/project08/sub01/sub01.html" title="지로납부" class="fl"><img src="images/giro.PNG" alt="giro"/></a></li>
+					<li><a href="/project08/sub03/sub03.jsp" title="전계좌조회" class="fl"><img src="images/inquiry.PNG" alt="inquiry"/></a></li>
+					<li><a href="/project08/sub02/sub02.jsp" title="계좌이체" class="fl"><img src="images/transfer.PNG" alt="transfer"/></a></li>
+					<li><a href="/project08/sub03/sub03.jsp" title="간편조회서비스" class="fl"><img src="images/simple.PNG" alt="simple"/></a></li>
+					<li><a href="/project08/sub01/sub01.jsp" title="지로납부" class="fl"><img src="images/giro.PNG" alt="giro"/></a></li>
 				</ul>
 					<div class="serviceText fl">
 						<ul>
@@ -132,17 +132,17 @@
 					</div>
 			</div> <!-- id="mainService" -->
 			<div id="bankingProduct" class="fl">
-				<div class="issued fl"><a href="/project08/sub03/sub03.html">인증서 발급/재발급</a></div>
-				<div class="otherLine"><a href="/project08/sub02/sub02.html">타행/타기관 인증서 등록</a></div>
+				<div class="issued fl"><a href="/project08/sub03/sub03.jsp">인증서 발급/재발급</a></div>
+				<div class="otherLine"><a href="/project08/sub02/sub02.jsp">타행/타기관 인증서 등록</a></div>
 				<div class="product">금융상품</div>
 				<div class="productOutBox fl">
 					<div class="productTable">
-						<a href="/project08/sub03/sub03.html" title="예금/신탁" class="productTableCell1 fl cf">예금/신탁</a>
-						<a href="/project08/sub01/sub01.html" title="펀드" class="productTableCell2 fl cf">펀드</a>
-						<a href="/project08/sub02/sub02.html" title="대출" class="productTableCell3 fl cf">대출</a>
-						<a href="/project08/sub03/sub03.html" title="외환" class="productTableCell4 fl cf">외환</a>
-						<a href="/project08/sub01/sub01.html" title="골드/실버" class="productTableCell5 fl cf">골드/실버</a>
-						<a href="/project08/sub03/sub03.html" title="퇴직연금" class="productTableCell6 fl cf">퇴직연금</a>
+						<a href="/project08/sub03/sub03.jsp" title="예금/신탁" class="productTableCell1 fl cf">예금/신탁</a>
+						<a href="/project08/sub01/sub01.jsp" title="펀드" class="productTableCell2 fl cf">펀드</a>
+						<a href="/project08/sub02/sub02.jsp" title="대출" class="productTableCell3 fl cf">대출</a>
+						<a href="/project08/sub03/sub03.jsp" title="외환" class="productTableCell4 fl cf">외환</a>
+						<a href="/project08/sub01/sub01.jsp" title="골드/실버" class="productTableCell5 fl cf">골드/실버</a>
+						<a href="/project08/sub03/sub03.jsp" title="퇴직연금" class="productTableCell6 fl cf">퇴직연금</a>
 					</div>
 				</div>
 			</div> <!-- id="bankingProduct" -->
@@ -151,17 +151,17 @@
 		<div id="event">
 			<article id="mainEvent" class="fl">
 				<ul class="event cf">
-					<li class="active"><a href="/project08/sub02/sub02.html" tabindex="1">공지사항</a></li>
-					<li class="TabBtn"><a href="/project08/sub01/sub01.html" tabindex="1">예금/적금</a></li>
-					<li class="TabBtn"><a href="/project08/sub03/sub03.html" tabindex="1">이벤트</a></li>
+					<li class="active"><a href="/project08/sub02/sub02.jsp" tabindex="1">공지사항</a></li>
+					<li class="TabBtn"><a href="/project08/sub01/sub01.jsp" tabindex="1">예금/적금</a></li>
+					<li class="TabBtn"><a href="/project08/sub03/sub03.jsp" tabindex="1">이벤트</a></li>
 				</ul>
 				<div class="tabCon">
 					<div class="noticeTab">
 						<ul>
-							<li><a href="/project08/sub02/sub02.html" tabindex="1">(1)방카슈라스 업무 일시중지 안내</a></li>
-							<li><a href="/project08/sub02/sub02.html" tabindex="1">(2)코로나 19 관련 일부 영업점 중단 안내</a></li>
-							<li><a href="/project08/sub03/sub03.html" tabindex="1">(3)기관 별 업무 일시중단 안내</a></li>
-							<li><a href="/project08/sub03/sub03.html" tabindex="1">(4)긴급전산점검 업무 일시중단 안내</a></li>
+							<li><a href="/project08/sub02/sub02.jsp" tabindex="1">(1)방카슈라스 업무 일시중지 안내</a></li>
+							<li><a href="/project08/sub02/sub02.jsp" tabindex="1">(2)코로나 19 관련 일부 영업점 중단 안내</a></li>
+							<li><a href="/project08/sub03/sub03.jsp" tabindex="1">(3)기관 별 업무 일시중단 안내</a></li>
+							<li><a href="/project08/sub03/sub03.jsp" tabindex="1">(4)긴급전산점검 업무 일시중단 안내</a></li>
 						</ul>
 					</div>
 					<div class="depositsTab">
@@ -169,16 +169,16 @@
 							<div class="recommenBox">
 								<div class="loan">
 									<ul>
-										<li><a href="/project08/sub01/sub01.html" class="fl"><span class="box">대출</span></a></li>
-										<li><a href="/project08/sub02/sub02.html">365일 언제 어디서나!</a></li>
-										<li><a href="/project08/sub03/sub03.html">쏠편한 직장인대출S</a></li>
+										<li><a href="/project08/sub01/sub01.jsp" class="fl"><span class="box">대출</span></a></li>
+										<li><a href="/project08/sub02/sub02.jsp">365일 언제 어디서나!</a></li>
+										<li><a href="/project08/sub03/sub03.jsp">쏠편한 직장인대출S</a></li>
 									</ul>
 								</div>
 								<div class="deposit">
 									<ul>
-										<li><a href="/project08/sub01/sub01.html" class="fl"><span class="box">예금</span></a></li>
-										<li><a href="/project08/sub02/sub02.html">간단하고 쉬운 우대금리!</a></li>
-										<li><a href="/project08/sub03/sub03.html">신한 안녕,반가워 적금</a></li>
+										<li><a href="/project08/sub01/sub01.jsp" class="fl"><span class="box">예금</span></a></li>
+										<li><a href="/project08/sub02/sub02.jsp">간단하고 쉬운 우대금리!</a></li>
+										<li><a href="/project08/sub03/sub03.jsp">신한 안녕,반가워 적금</a></li>
 									</ul>
 								</div>
 							</div>
@@ -186,7 +186,7 @@
 					</div>
 					<div class="eventTab">
 						<ul>
-							<li><a href="/project08/sub01/sub01.html" tabindex="1"><img src="images/ib_banner02.png" alt="eventBanner"/></a></li>
+							<li><a href="/project08/sub01/sub01.jsp" tabindex="1"><img src="images/ib_banner02.png" alt="eventBanner"/></a></li>
 						</ul>
 					</div>
 				</div>
@@ -232,27 +232,27 @@
 				<div class="border"></div>
 				<ul>
 					<li><span class="/project08/spanNotice">공지사항</span></li>
-					<li><a href="/project08/sub02/sub02.html">&middot;신한금융투자 금융공동망 업무 일시중단 안내</a></li>
-					<li><a href="/project08/sub03/sub03.html">&middot;SC제일은행 금융공동망 업무 일시중단 안내</a></li>
-					<li><a href="/project08/sub01/sub01.html">&middot;유진금융투자 금융공동망 업무 일시중단 안내</a></li>
+					<li><a href="/project08/sub02/sub02.jsp">&middot;신한금융투자 금융공동망 업무 일시중단 안내</a></li>
+					<li><a href="/project08/sub03/sub03.jsp">&middot;SC제일은행 금융공동망 업무 일시중단 안내</a></li>
+					<li><a href="/project08/sub01/sub01.jsp">&middot;유진금융투자 금융공동망 업무 일시중단 안내</a></li>
 				</ul>
 			</div> <!-- id="leftNotice" -->
 			<div id="centerNotice" class="fl">
 				<div class="border"></div>
 				<ul>
 					<li><span class="/project08/spanNotice">인터넷뱅킹 FAQ</span></li>
-					<li><a href="/project08/sub02/sub02.html">&middot;브라우저 인증서 사용고객 안내</a></li>
-					<li><a href="/project08/sub03/sub03.html">&middot;통합프로그램 설치 안내</a></li>
-					<li><a href="/project08/sub01/sub01.html">&middot;스마트OTP 설치 안내</a></li>
+					<li><a href="/project08/sub02/sub02.jsp">&middot;브라우저 인증서 사용고객 안내</a></li>
+					<li><a href="/project08/sub03/sub03.jsp">&middot;통합프로그램 설치 안내</a></li>
+					<li><a href="/project08/sub01/sub01.jsp">&middot;스마트OTP 설치 안내</a></li>
 				</ul>
 			</div> <!-- id="centerNotice" -->
 			<div id="rightNotice" class="fl">
 				<div class="border"></div>
 				<ul>
 					<li><span class="/project08/spanNotice">뱅킹보안안내</span></li>
-					<li><a href="/project08/sub02/sub02.html">&middot;전자금융사기 피해예방 안내</a></li>
-					<li><a href="/project08/sub03/sub03.html">&middot;금융사기 대처방법</a></li>
-					<li><a href="/project08/sub02/sub02.html">&middot;전자금융거래이용자10계명</a></li>
+					<li><a href="/project08/sub02/sub02.jsp">&middot;전자금융사기 피해예방 안내</a></li>
+					<li><a href="/project08/sub03/sub03.jsp">&middot;금융사기 대처방법</a></li>
+					<li><a href="/project08/sub02/sub02.jsp">&middot;전자금융거래이용자10계명</a></li>
 				</ul>
 			</div> <!-- id="rightNotice" -->
 		</div> <!-- id="notice" -->
@@ -261,13 +261,13 @@
 			<div id="listWrap">
 				<div class="time fl">
 					<ul class="list5 fl">
-						<li><a href="/project08/sub01/sub01.html">&middot;이용시간안내</a></li>
-						<li><a href="/project08/sub03/sub03.html">&middot;수수료안내</a></li>
-						<li><a href="/project08/sub02/sub02.html">&middot;뱅킹이용약관</a></li>
+						<li><a href="/project08/sub01/sub01.jsp">&middot;이용시간안내</a></li>
+						<li><a href="/project08/sub03/sub03.jsp">&middot;수수료안내</a></li>
+						<li><a href="/project08/sub02/sub02.jsp">&middot;뱅킹이용약관</a></li>
 					</ul>
 					<ul class="list6 fl">
-						<li><a href="/project08/sub01/sub01.html">&middot;금리안내</a></li>
-						<li><a href="/project08/sub03/sub03.html">&middot;금융계산기</a></li>
+						<li><a href="/project08/sub01/sub01.jsp">&middot;금리안내</a></li>
+						<li><a href="/project08/sub03/sub03.jsp">&middot;금융계산기</a></li>
 					</ul>
 				</div>
 			</div> <!-- id="listWrap" -->

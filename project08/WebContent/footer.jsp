@@ -32,9 +32,9 @@
 				</div>	
 				<div class="sns">
 					<ul class="cf">
-						<li class="twitter fl"><a href="/project08/sub01/sub01.html"></a></li>
-						<li class="facebook fl"><a href="/project08/sub03/sub03.html"></a></li>
-						<li class="naver fl"><a href="/project08/sub02/sub02.html"></a></li>
+						<li class="twitter fl"><a href="/project08/sub01/sub01.jsp"></a></li>
+						<li class="facebook fl"><a href="/project08/sub03/sub03.jsp"></a></li>
+						<li class="naver fl"><a href="/project08/sub02/sub02.jsp"></a></li>
 					</ul>
 				</div>
 			</div> <!-- id="portal" -->

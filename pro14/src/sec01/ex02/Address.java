@@ -3,7 +3,7 @@ package sec01.ex02;
 public class Address {
 	private String city;
 	private String zipcode;
-	
+
 	public Address() {
 		
 	}
@@ -23,5 +23,5 @@ public class Address {
 	public void setZipcode(String zipcode) {
 		this.zipcode = zipcode;
 	}
-
+	
 }

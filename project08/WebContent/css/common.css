@@ -10,7 +10,7 @@ a:visited{color: #333333;}
 .fr{float: right;}
 .cb{clear: both;}
 .cf:after{content: ''; display: block; clear: both;}
-
+.el{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
 #header{background: #2d71c4; width: 100%; height: 157px; margin: 0 auto; z-index: 1000;}
 	#main{width: 1420px; height: 87px; margin: 0 auto; z-index: 1000;}
@@ -32,8 +32,9 @@ a:visited{color: #333333;}
 	
 #nav{width: 100%; height: 70px; /* background: #2d71c4; */ position: relative; z-index: 1000; background: #2d71c4;}
 	#nav>ul{width: 1420px; height: 70px; margin: 0 auto;}
-	#nav>ul>li{float: left; height: 70px; margin-right: 10px;}
-	#nav>ul>li>a{color: #ffffff; height: 70px; padding: 0 18px; font-size: 23px; font-weight: bold; box-sizing: border-box; display: block; line-height: 70px; text-align: center;}
+	#nav>ul>li{float: left; width: auto; height: 70px; margin-right: 10px;}
+	#nav>ul>li.oneDepth{float: left; height: 70px; margin-right: 10px; text-align:center;}
+	#nav>ul>li>a{color: #ffffff; width: 140px; height: 70px; padding: 0 18px; font-size: 23px; font-weight: bold; box-sizing: border-box; display: block; line-height: 70px;}
 
 .twoDepth{width: 100%; position: absolute; left: 0px; top: 70px; background: #ffffff; border-bottom: 3px solid #2d71c4; display: none;}
 	.two{width: 1420px; margin: 0 auto;}

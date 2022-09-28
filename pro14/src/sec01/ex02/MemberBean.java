@@ -2,6 +2,7 @@ package sec01.ex02;
 
 import java.sql.Date;
 
+
 public class MemberBean {
 	private String id;
 	private String pwd;
@@ -13,14 +14,12 @@ public class MemberBean {
 	public MemberBean() {
 		
 	}
-	
 
 	public MemberBean(String id, String pwd, String name, String email) {
 		this.id = id;
 		this.pwd = pwd;
 		this.name = name;
 		this.email = email;
-		this.addr = addr;
 	}
 
 	public Address getAddr() {
