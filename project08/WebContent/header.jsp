@@ -481,7 +481,6 @@
 				</li>
 			</ul>
 		</nav>
-		</
 	</fmt:bundle>
 	</header>
 </body>

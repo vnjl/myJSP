@@ -38,35 +38,35 @@ function fn_sendMember(){
 </script>
 </head>
 <body>
- <%@ include file = "/header.jsp" %>
+ <%@ include file = "../header.jsp" %>
 	<!------------------------------- section ------------------------------------->
 	<section id="section" class="section">
-	  <form name="frmMember">
-	  <table>
-		   <th>회원 가입창</th>
-		  <tr>
-			<td>아이디</td>
-			<td><input type="text" name="id"></td>
-		  </tr>
-		  <tr>
-			<td>비밀번호</td>
-			<td><input type="password" name="pwd"></td>
-		  </tr>
-		  <tr>
-			<td>이름</td>
-			<td><input type="text" name="name"></td>
-		  </tr>
-		    <tr>
-			<td>이메일</td>
-			<td><input type="text" name="email"></td>
-		  </tr>
-	  </table>
-	   <input type="button" value="가입하기" onclick="fn_sendMember()">
-	   <input type="reset" value="다시입력">
-	   <!-- <hidden> 태그를 이용해 서블릿에게 회원 등록임을 알린다 -->
-	   <input  type="hidden" name="command" value="addMember" />	
-	  </form>
+		<div id="sign">
+			<form method="post" action="/project08/sub03/sub03.jsp">
+			<p class="sign">회원가입</p>
+				<div id="id">
+					<p>아이디</p>
+					<input type="text" name="id">
+				</div>
+				<div id="pwd">
+					<p>비밀번호</p>
+					<input type="password" name="pwd">
+				</div>
+				<div id="name">
+					<p>이름</p>
+					<input type="text" name="name">
+				</div>
+				<div id="email">
+					<p>이메일</p>
+					<input type="text" name="email">
+				</div>
+				
+				<input type="submit" class="btn1 fl" value="가입하기">
+				<input type="reset" class="btn2" value="다시입력">
+			</form>
+		</div>
 	</section>
-	<%@ include file = "/footer.jsp" %>
+<!-- ------------------------------------------------------ -->
+	<%@ include file = "../footer.jsp" %>
 </body>
 </html>

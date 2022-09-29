@@ -1,4 +1,4 @@
-package delete;
+package member;
 
 import java.sql.Date;
 
