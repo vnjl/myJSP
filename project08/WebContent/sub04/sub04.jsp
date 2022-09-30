@@ -42,7 +42,7 @@ function fn_sendMember(){
 	<!------------------------------- section ------------------------------------->
 	<section id="section" class="section">
 		<div id="sign">
-			<form method="post" action="/project08/sub03/sub03.jsp">
+			<form name="frmMember" method="post" action="/project08/sub03/sub03.jsp">
 			<p class="sign">회원가입</p>
 				<div id="id">
 					<p>아이디</p>
@@ -61,7 +61,7 @@ function fn_sendMember(){
 					<input type="text" name="email">
 				</div>
 				
-				<input type="submit" class="btn1 fl" value="가입하기">
+				<input class="btn1" type="button" value="가입하기" onclick="fn_sendMember()" >
 				<input type="reset" class="btn2" value="다시입력">
 			</form>
 		</div>

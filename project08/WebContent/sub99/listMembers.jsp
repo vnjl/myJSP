@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    import="java.util.*, sec02.ex02.*"
+    import="java.util.*, member.*"
     pageEncoding="UTF-8"
     isELIgnored="false"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"  %>
@@ -45,13 +45,13 @@
 <p class="cls1">회원정보</p>
 	<table align="center" border="1">
 		<tr align="center" bgcolor="lightgreen">
-			<td width="150px"><b>아이디</b></td>
-			<td width="150px"><b>비밀번호</b></td>
-			<td width="50px"><b>이름</b></td>
-			<td width="200px"><b>이메일</b></td>
-			<td width="200px"><b>가입일</b></td>
-			<td width="50px"><b>수정</b></td>
-			<td width="50px"><b>삭제</b></td>
+			<td width="7%"><b>아이디</b></td>
+			<td width="7%"><b>비밀번호</b></td>
+			<td width="7%"><b>이름</b></td>
+			<td width="7%"><b>이메일</b></td>
+			<td width="7%"><b>가입일</b></td>
+			<td width="7%"><b>수정</b></td>
+			<td width="7%"><b>삭제</b></td>
 		</tr>
 		<c:choose>
 		<c:when test="${empty membersList}">

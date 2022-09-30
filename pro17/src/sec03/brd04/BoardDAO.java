@@ -1,5 +1,6 @@
-package sec03.brd02;
+package sec03.brd04;
 
+import java.net.URLEncoder;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -33,6 +34,9 @@ public class BoardDAO {
 			String query = "SELECT LEVEL,articleNO,parentNO,title,content,id,writeDate" + " from t_board"
 					+ " START WITH  parentNO=0" + " CONNECT BY PRIOR articleNO=parentNO"
 					+ " ORDER SIBLINGS BY articleNO DESC";
+			/*String query = "SELECT LEVEL,articleNO,parentNO,title,content,id,writeDate" + " from t_board"
+					+ " START WITH  parentNO=0" + " CONNECT BY PRIOR articleNO=parentNO"
+					+ " ORDER SIBLINGS BY articleNO DESC";*/
 			System.out.println(query);
 			pstmt = conn.prepareStatement(query);
 			ResultSet rs = pstmt.executeQuery();
@@ -62,6 +66,45 @@ public class BoardDAO {
 		}
 		return articlesList;
 	}
+	
+	public ArticleVO selectArticle(int articleNO){
+		ArticleVO article=new ArticleVO();
+		try{
+			conn = dataFactory.getConnection();
+			String query ="select articleNO,parentNO,title,content,  NVL(imageFileName, 'null') as imageFileName, id, writeDate"
+				                     +" from t_board" 
+				                     +" where articleNO=?";
+			System.out.println(query);
+			pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, articleNO);
+			ResultSet rs =pstmt.executeQuery();
+			rs.next();
+			int _articleNO =rs.getInt("articleNO");
+			int parentNO=rs.getInt("parentNO");
+			String title = rs.getString("title");
+			String content =rs.getString("content");
+			String imageFileName = URLEncoder.encode(rs.getString("imageFileName"), "UTF-8"); //파일이름에 특수문자가 있을 경우 인코딩합니다.
+				if(imageFileName.equals("null")) {
+					imageFileName = null;
+				}
+			String id = rs.getString("id");
+			Date writeDate = rs.getDate("writeDate");
+	
+			article.setArticleNO(_articleNO);
+			article.setParentNO (parentNO);
+			article.setTitle(title);
+			article.setContent(content);
+			article.setImageFileName(imageFileName);
+			article.setId(id);
+			article.setWriteDate(writeDate);
+			rs.close();
+			pstmt.close();
+			conn.close();
+		}catch(Exception e){
+			e.printStackTrace();	
+		}
+			return article;
+	}
 
 	private int getNewArticleNO() {
 		try {
@@ -81,10 +124,11 @@ public class BoardDAO {
 		return 0;
 	}
 
-	public void insertNewArticle(ArticleVO article) {
+	public int insertNewArticle(ArticleVO article) {
+		int articleNO = getNewArticleNO();
 		try {
 			conn = dataFactory.getConnection();
-			int articleNO = getNewArticleNO();
+			//int articleNO = getNewArticleNO();
 			int parentNO = article.getParentNO();
 			String title = article.getTitle();
 			String content = article.getContent();
@@ -106,6 +150,7 @@ public class BoardDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		return articleNO;
 	}
 
 }
