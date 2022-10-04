@@ -1,4 +1,4 @@
-package sec03.brd04;
+package sec03.brd06;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
