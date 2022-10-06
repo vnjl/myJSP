@@ -28,4 +28,8 @@ public class BoardService {
 	public void modArticle(ArticleVO article) {
 		boardDAO.updateArticle(article);
 	}	
+	
+    public int addReply(ArticleVO article) {
+        return boardDAO.insertNewArticle(article);
+    }	
 }

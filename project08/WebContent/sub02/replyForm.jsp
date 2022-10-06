@@ -28,9 +28,16 @@
   }  
 </script> 
 <title>답글쓰기 페이지</title>
+    <link rel="stylesheet" href="css/replyForm.css"/>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<script src="../js/jquery-1.7.1.min.js"></script>
+	<script src="js/sub02.js"></script>
 </head>
 <body>
- <h1 style="text-align:center">답글쓰기</h1>
+<%@ include file = "/header.jsp" %>
+<section>
+ <h2 id="title">답글쓰기</h2>
+ <div id="wrap">
   <form name="frmReply" method="post"  action="${contextPath}/board/addReply.do"   enctype="multipart/form-data">
     <table align="center">
     <tr>
@@ -46,19 +53,21 @@
 			<td><textarea name="content" rows="10" cols="65" maxlength="4000"> </textarea> </td>
 		</tr>
 		<tr>
-			<td align="right">이미지파일 첨부:  </td>
-			<td> <input type="file" name="imageFileName"  onchange="readURL(this);" /></td>
-            <td><img  id="preview" src="#"   width=200 height=200/></td>
+			<td align="right">이미지파일 첨부  </td>
+			<td class="image"><input type="file" name="imageFileName"  onchange="readURL(this);" /></td>
+            <td><img id="preview" src="" width=200 height=200 alt="미리보기" /></td>
 		</tr>
 		<tr>
 			<td align="right"> </td>
-			<td>
-				<input type=submit value="답글반영하기" />
-				<input type=button value="취소"onClick="backToList(this.form)" />
-				
+			<td class="button">
+				<input type=submit class="ok" value="답글반영하기" />
+				<input type=button class="cancel" value="취소"onClick="backToList(this.form)" />			
 			</td>
 		</tr>
     </table>
   </form>
+ </div>
+</section>
+<%@ include file = "/footer.jsp" %>
 </body>
 </html>

@@ -1,5 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" 
+    isELIgnored="false" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="contextPath"  value="${pageContext.request.contextPath}"  />
+<c:set  var="articlesList"  value="${articlesMap.articlesList}" />
+<c:set  var="totArticles"  value="${articlesMap.totArticles}" />
+<c:set  var="section"  value="${articlesMap.section}" />
+<c:set  var="pageNum"  value="${articlesMap.pageNum}" />
+
+<%
+  request.setCharacterEncoding("UTF-8");
+%> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +28,7 @@
 	<section id="section">
 		<div id="way">
 			<div class="wayText">
-				<p>개인 <img src="../../images/sign.png" alt=""/> 고객센터 <img src="../../images/sign.png" alt=""/> <img src="../../images/menu_3.png" alt="menuWay"/> <a href="#" class="common">일반게시판</a>
+				<p>개인 <img src="../images/sign.PNG" alt=""/> 고객센터 <img src="../images/sign.PNG" alt=""/> <img src="../images/menu_3.PNG" alt="menuWay"/> <a href="#" class="common">일반게시판</a>
 				</p>
 			</div>
 		</div>
@@ -25,182 +37,98 @@
 				<div id="titleText" class="fl"><span class="boardtitleText">일반 게시판</span></div>
 			</div>	
 		</div>
-			<div id="boardTotal">
-				<div class="infoSearch cf">
-					<div class="boardSearchBox fr">
-						<h3 id="boardH3">일반게시판 검색</h3>
-						<form>							
-							<select name="search" class="searchSelect">
-								<option value="제목">제목</option>
-								<option value="내용">내용</option>
-								<option value="글쓴이">제목+내용</option>
-							</select>
-							<input class="searchInput" type="text"/>
-							<button class="searchSubmit"><img src="../images/search_icon.png" width="18" alt=""/></button>
-						</form>
-					</div>	
-				</div>
-					<div id="infoText">
-						<div class="infoSearch cl cf">
-							<div class="pageInfo">Total 38건 1페이지</div>
-						</div>
-						<h3 id="boardH3">Q&A 리스트</h3>
-					</div>
-					<ul id="board">
-						<li id="boardSubjectLi" class="cf">
-							<div class="fl boardNum">번호</div>
-							<div class="fl boardTitle">제목</div>
-							<div class="boardRightBox fr">
-								<div class="fl boardAuthor">글쓴이</div>
-								<div class="fl boardView">조회수</div>
-								<div class="fl boardDate">날짜</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum fl"><span class="boardNotice">알림</span></div>		
-									<div class="fl writeListTitle">
-									서비스 관련 문의는 일반게시판이 아닌 Q&A 게시판에서 받고 있습니다.
-									</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">고객센터</div>
-									<div class="fl writeListView">1121</div>
-									<div class="fl boardDate">05/29</div>
-								</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum">37</div>
-								<div class="fl writeListTitle"><span class="newWrite">New!</span>신한은행 고객센터 서비스에 감동했습니다. ^__^</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">감동고객</div>
-									<div class="fl writeListView">15</div>									
-									<div class="fl boardDate">08/24</div>
-								</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum">36</div>		
-								<div class="fl writeListTitle"><span class="newWrite">New!</span>급한데 서비스 연결이 잘 안 되네요. 실망했습니다.</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">실망한고객</div>
-									<div class="fl writeListView">121</div>
-									<div class="fl boardDate">08/24</div>
-								</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum">35</div>
-								<div class="fl writeListTitle"><span class="newWrite">New!</span><img class="replyArrow" src="../images/reply.png" alt=""/>RE: 불편을 드려 죄송합니다. 서비스 연결 복구되었습니다.</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">고객센터</div>
-									<div class="fl writeListView">135</div>									
-									<div class="fl boardDate">08/24</div>
-								</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum">34</div>
-								<div class="fl writeListTitle">친절한 상담원님 감사합니다.</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">칭찬고객</div>
-									<div class="fl writeListView">32</div>
-									<div class="fl boardDate">08/23</div>
-								</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum">33</div>
-								<div class="fl writeListTitle"><img class="replyArrow" src="../images/reply.png" alt=""/>RE: 그 상담원님 저도 알아요. 정말 친절하세요.</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">칭찬하는고객</div>
-									<div class="fl writeListView">7</div>
-									<div class="fl boardDate">08/23</div>
-								</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum">32</div>
-								<div class="fl writeListTitle">신한은행 서비스 참 좋고 홈페이지 정말 깔끔하고 멋있습니다. 좋은 서비스 끝까지 유지했으면 좋겠습니다. 신한은행 화이팅입니다.</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">응원하는고객</div>
-									<div class="fl writeListView">5</div>
-									<div class="fl boardDate">08/22</div>
-								</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum">31</div>
-								<div class="fl writeListTitle">정말 편리한 서비스에 감탄하고 갑니다.</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">감탄한고객</div>
-									<div class="fl writeListView">12</div>
-									<div class="fl boardDate">08/21</div>
-								</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum">30</div>
-								<div class="fl writeListTitle">신한은행 정말 좋아요~</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">좋아하는고객</div>
-									<div class="fl writeListView">11</div>
-									<div class="fl boardDate">08/21</div>
-								</div>
-							</div>
-						</li>
-						<li class="writeLi cf">
-							<div class="boardTitleLine cf">
-								<div class="fl boardNum">29</div>
-								<div class="fl writeListTitle"><img class="replyArrow" src="../images/reply.png" alt=""/>RE: 저도 정말 신한은행 좋아합니다~</div>
-								<div class="writeListRightBox fr">
-									<div class="fl writeListAuthor">공감하는고객</div>
-									<div class="fl writeListView">7</div>
-									<div class="fl boardDate">08/22</div>
-								</div>
-							</div>
-						</li>
-						<div class="pageNumber cf">
-							<ul class="pageNumberInner cf">
-								<li class="cf">
-									<a href="#" class="currentPage">1</a>
-								</li>
-								<li class="cf">
-									<a href="#">2</a>
-								</li>
-								<li class="cf">
-									<a href="#">3</a>
-								</li>
-								<li class="cf">
-									<a href="#">4</a>
-								</li>
-								<li class="cf">
-									<a href="#">5</a>
-								</li>
-								<li class="cf">
-									<a href="#">6</a>
-								</li>
-								<li class="cf">
-									<a href="#">7</a>
-								</li>
-							</ul>
-						</div>
-						<div class="writeBox">
-							<a class="writeButton fr" type="button">글쓰기</a>
-						</div>
-					</ul>
-			</div>
-			</section>
+	<div id="boardTotal">
+		<div class="infoSearch cf">
+			<div class="boardSearchBox fr">
+				<h3 id="boardH3">일반게시판 검색</h3>
+				<form>							
+					<select name="search" class="searchSelect">
+						<option value="제목">제목</option>
+						<option value="내용">내용</option>
+						<option value="글쓴이">제목+내용</option>
+					</select>
+					<input class="searchInput" type="text"/>
+					<button class="searchSubmit"><img src="../images/search_icon.png" width="18" alt=""/></button>
+				</form>
+			</div>	
 		</div>
-		</div>
+	  <ul id="boardSubjectLi">
+	     <li class="fl">글번호</li>
+	     <li class="fl">제목</li>
+		 <li class="fl">작성자</li>
+	     <li class="fl">작성일</li>
+	  </ul>
+	<c:choose>
+	  <c:when test="${empty articlesList}" >
+	    <ul>
+	      <li>
+	         <p align="center" class="cb">
+	            <b><span style="font-size:9pt;">등록된 글이 없습니다.</span></b>
+	        </p>
+	      </li>  
+	    </ul>
+	  </c:when>
+	  <c:when test="${!empty articlesList}" >
+	    <c:forEach  var="article" items="${articlesList }" varStatus="articleNum" >
+	     <ul>
+			<li class="fl boardNum fl">${articleNum.count}</li>
+			<li class="fl writeListAuthor">${article.id }</li>
+			<li>
+				<span style="padding-right:30px"></span>    
+			   <c:choose>
+				  <c:when test='${article.level > 1 }'>  
+					 <c:forEach begin="1" end="${article.level }" step="1">
+						 <span style="padding-left:10px"></span> 
+					 </c:forEach>
+					 <span style="font-size:12px;">[답변]</span>
+						   <a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title}</a>
+					  </c:when>
+					  <c:otherwise>
+						<a class='cls1' href="${contextPath}/board/viewArticle.do?articleNO=${article.articleNO}">${article.title }</a>
+					</c:otherwise>
+				</c:choose>
+			</li>
+		  <li class="fl boardDate"><fmt:formatDate value="${article.writeDate}" /></li> 
+		</ul>
+	    </c:forEach>
+	    </c:when>
+	    </c:choose>
+	 <c:if test="${totArticles != null }" >
+	      <c:choose>
+	        <c:when test="${totArticles >100 }">  <!-- 글 개수가 100 초과인경우 -->
+		      <c:forEach   var="page" begin="1" end="10" step="1" >
+		         <c:if test="${section >1 && page==1 }">
+		          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section-1}&pageNum=${(section-1)*10 +1 }">&nbsp; pre </a>
+		         </c:if>
+		          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${(section-1)*10 +page } </a>
+		         <c:if test="${page ==10 }">
+		          <a class="no-uline" href="${contextPath }/board/listArticles.do?section=${section+1}&pageNum=${section*10+1}">&nbsp; next</a>
+		         </c:if>
+		      </c:forEach>
+	        </c:when>
+	        <c:when test="${totArticles ==100 }" >  <!--등록된 글 개수가 100개인경우  -->
+		      <c:forEach   var="page" begin="1" end="10" step="1" >
+		        <a class="no-uline"  href="#">${page } </a>
+		      </c:forEach>
+	        </c:when>
+	        
+	        <c:when test="${totArticles< 100 }" >   <!--등록된 글 개수가 100개 미만인 경우  -->
+		      <c:forEach   var="page" begin="1" end="${totArticles/10 +1}" step="1" >
+		         <c:choose>
+		           <c:when test="${page==pageNum }">
+		            <a class="sel-page"  href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${page } </a>
+		          </c:when>
+		          <c:otherwise>
+		            <a class="no-uline"  href="${contextPath }/board/listArticles.do?section=${section}&pageNum=${page}">${page } </a>
+		          </c:otherwise>
+		        </c:choose>
+		      </c:forEach>
+	        </c:when>
+	      </c:choose>
+	    </c:if>
+	</div>    
+	<br><br>
+	<a  class="cls1" href="${contextPath}/board/articleForm.do"><b>글쓰기</b></a>
 	</section>
 <!-- --------------------------------------------- -->
 <%@ include file = "/footer.jsp" %>

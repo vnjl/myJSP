@@ -1,4 +1,4 @@
-package board.index;
+package sec03.brd08;
 
 import java.util.HashMap;
 import java.util.List;

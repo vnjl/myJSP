@@ -6,7 +6,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>index</title>
 	<link rel="stylesheet" href="css/main.css"/>
 	<link rel="stylesheet" href="css/common.css"/>
 	<link rel="icon" href="images/UwoFKxAc.ico"/>
@@ -14,23 +14,19 @@
 	<script src="js/main.js"></script>
 	<script src="js/count.js"></script>
 	<script src="js/weather.js"></script>
-	<script src="js/popup.js"></script>
+	<script src="js/popupC.js"></script>
 
 </head>
 <body onLoad="ddaycount()">
 	<span class="quickToggle"><span class="indent">퀵메뉴닫기</span></span>
 	<div class="quickmenu">
-		<h3 class="quickhead"><a href="/project08/sub03/sub03.jsp"><img src="images/quick_head.png" alt="Quickmenu"/></a></h3>
-		<ul class="quickIcon">
-			<li class="quick01"><a href="/project08/sub01/sub01.jsp"><img src="images/" alt=""/></a></li>
-		</ul>
 		<ul class="quickBt">
 			<li><a href="/project08/sub02/sub02.jsp"><img src="images/login_btn.png" alt="login"/></a></li>
 			<li><a href="/project08/sub03/sub03.jsp"><img src="images/join_btn.png" alt="join"/></a></li>
 			<li><a href="/project08/sub01/sub01.jsp"><img src="images/admin2_btn.png" alt="admin"/></a></li>
 		</ul>
 	</div>
-<%@ include file = "/popup.jsp" %>
+<%@ include file = "/popupC.jsp" %>
 <%@ include file = "/header.jsp" %>
 	<!------------------------------- section ------------------------------------->
 	<section id="section">

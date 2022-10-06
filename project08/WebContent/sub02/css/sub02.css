@@ -1,4 +1,4 @@
-﻿@import url(common.css);
+@import url(common.css);
 body{background: /* url(../images/QnA2.png) no-repeat center top; */ color: #333333;}
 #boardH3 {display:none;}	
 
@@ -14,7 +14,7 @@ body{background: /* url(../images/QnA2.png) no-repeat center top; */ color: #333
 		.searchSelect {font-size:17px; padding:4px; margin-right: 5px;}
 		.searchInput {font-size:17px; width:220px; padding:5px; border: 1px solid #cbcdcc;}
 		.searchSubmit {padding:0; margin-left:5px; margin-right:10px; cursor:pointer; background-color:#fdfdfd; border:none;}
-
+#boardTotal{width: 1420px; height: auto; margin: 0 auto;}
 
 #infoText{width: 1420px; margin: 0 auto;}
 	.infoSearch {width: 1420px; margin: 0 auto; padding: 0px 10px;}
@@ -57,9 +57,11 @@ body{background: /* url(../images/QnA2.png) no-repeat center top; */ color: #333
 	.currentPage, .pageNumberInner>li>a:hover {color:#fdfdfd; background-color: #3579d4;;}
 
 
-
 	.writeButton {text-align: center; font-size: 18px; border-radius:2px; padding:8px 20px; margin-left:10px; border: 1px solid #3579d4; background-color: #3579d4; color:#fdfdfd; margin-right: 15px; cursor:pointer;}
-
+   .no-uline {text-decoration:none;}
+   .sel-page{text-decoration:none;color:red;}
+   .cls1 {text-decoration:none;}
+   .cls2{text-align:center; font-size:30px;}
 		
 
 	

@@ -40,8 +40,13 @@
 	.cls1{font-size:40px; text-align:center;}
 	.cls2{font-size:20px; text-align:center;}
 </style>
+	<link rel="stylesheet" href="css/sub02.css"/>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<script src="../js/jquery-1.7.1.min.js"></script>
+	<script src="js/sub02.js"></script>	
 </head>
 <body>
+
 <p class="cls1">회원정보</p>
 	<table align="center" border="1">
 		<tr align="center" bgcolor="lightgreen">
@@ -75,5 +80,6 @@
 		</c:choose>
 	</table>
 	<a href="${contextPath}/member/memberForm.do"><p class="cls2">회원 가입하기</p></a>
+	<%@ include file = "/footer.jsp" %>
 </body>
 </html>

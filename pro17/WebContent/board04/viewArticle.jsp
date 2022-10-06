@@ -27,10 +27,17 @@
           obj.action="${contextPath}/board/modArticle.do";
           obj.submit();
       }   
+      
+      function fn_remove_article(url,articleNO){
+    	  /* 여기서는 없어도 됨 */
+      }
+      function readURL(input) {
+    	  /* 여기서는 없어도 됨 */
+      }       
    </script>
 </head>
 <body>
-  <form name="frmArticle" method="post" action="${contextPath}" enctype="multipart/form-data">
+  <form name="frmArticle" method="post" action="${contextPath}"  enctype="multipart/form-data">
   <table  border="0" align="center" >
   <tr>
    <td width="150" align="center" bgcolor="#FF9933">
@@ -38,7 +45,6 @@
    </td>
    <td >
     <input type="text"  value="${article.articleNO }"  disabled />
-    <!-- 글 수정 시 글 번호를 컨트롤러로 전송하기 위해 미리 <hidden> 태그를 이용해 글 번호를 저장한다. -->
     <input type="hidden" name="articleNO" value="${article.articleNO}"  />
    </td>
   </tr>
@@ -101,10 +107,6 @@
     
   <tr  id="tr_btn"    >
    <td colspan=2 align="center">
-     <%-- <c:if test="${member.id == article.id }">
-	    <input type=button value="수정하기" onClick="fn_enable(this.form)">
-	    <input type=button value="삭제하기" onClick="fn_remove_article('${contextPath}/board/removeArticle.do', ${article.articleNO})">
-	  </c:if> --%>
 	  <input type=button value="수정하기" onClick="fn_enable(this.form)">
 	  <input type=button value="삭제하기" onClick="fn_remove_article('${contextPath}/board/removeArticle.do', ${article.articleNO})">
 	  <input type=button value="리스트로 돌아가기"  onClick="backToList(this.form)">
