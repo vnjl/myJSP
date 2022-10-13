@@ -53,10 +53,10 @@
 				<div id="HeadRight" class="fl">
 					<h4>ID 로그인</h4>
 					<div id="RightButton">
-						<form action="sub03Fail.jsp" method="post">
+						<form action="/project08/sub02.jsp" method="post">
 							<div id="loginButton">
-								<input type="text" class="guideText" name="userID" value="아이디"/>
-								<input type="password" class="guideText" name="userPW" value="비밀번호"/>
+								<input type="text" class="guideText" name="userID" value="admin"/>
+								<input type="password" class="guideText" name="userPW" value="ay2111!!"/>
 							</div>
 							<div>
 								<input type="submit" id="login" value="로그인">

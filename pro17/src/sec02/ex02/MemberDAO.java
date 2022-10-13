@@ -129,6 +129,8 @@ public class MemberDAO {
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1,id);
 			pstmt.executeUpdate();
+			pstmt.close();
+			conn.close();			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

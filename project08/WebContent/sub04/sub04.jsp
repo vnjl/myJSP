@@ -31,7 +31,7 @@ function fn_sendMember(){
       // 전송 방법을 post로 지정
       frmMember.method="post";
       // 서블릿 매핑 이름을 member3으로 지정
-      frmMember.action="/project08/member";
+      frmMember.action="/project08/member/memberForm.do";
       // 서블릿으로 전송
       frmMember.submit();
    } 

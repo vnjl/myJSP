@@ -15,7 +15,6 @@
 	<script src="js/count.js"></script>
 	<script src="js/weather.js"></script>
 	<script src="js/popup.js"></script>
-
 </head>
 <body onLoad="ddaycount()">
 	<span class="quickToggle"><span class="indent">퀵메뉴닫기</span></span>

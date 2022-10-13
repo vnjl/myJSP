@@ -10,7 +10,9 @@ body{color: #333333;}
 		.wayText>p>a.common{font-size: 20px; color: #ffffff;}
 	#title{width: 1420px; margin: 0 auto; margin-top: 50px; margin-bottom: 50px; padding-bottom: 15px; border-bottom: 3px solid #aaaaaa; font-size: 35px;}
 	
-	#wrap{width: 800px; margin: 150px auto 130px;}
+	#wrap{width: 800px; margin: 0 auto;}
+	
+	td{border-left: none; border-right:none;}
 	
 	.button{padding-top: 80px;}
 	.button>input{padding: 10px 30px 10px 30px; margin-left: 20px; border: none;}

@@ -20,7 +20,7 @@
 </style>
 </head>
 <body>
-
+<%@ include file = "../header.jsp" %>
 <section>
  <h1 class="cls1">회원 정보 수정창</h1>
 	<form  method="post" action="${contextPath}/member/modMember.do?id=${memInfo.id}">
@@ -45,7 +45,7 @@
 	   </tr>
 	   <tr>
 	     <td width="200"><p align="right" >가입일</td>
-	     <td width="400"><input   type="text"  name="joinDate" value="${memInfo.joinDate }" disabled  ></td>
+	     <td width="400"><input type="text" name="joinDate" value="${memInfo.joinDate }" disabled  ></td>
 	   </tr>
 	   <tr align="center" >
 	    <td colspan="2" width="400"><input type="submit" value="수정하기" >

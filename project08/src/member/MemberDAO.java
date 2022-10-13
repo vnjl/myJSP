@@ -91,6 +91,7 @@ public class MemberDAO {
 			String email = rs.getString("email");
 			Date joinDate = rs.getDate("joinDate");
 			memInfo = new MemberVO(id, pwd, name, email, joinDate);
+			rs.close();
 			pstmt.close();
 			conn.close();
 		} catch (Exception e) {
@@ -129,6 +130,8 @@ public class MemberDAO {
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1,id);
 			pstmt.executeUpdate();
+			pstmt.close();
+			conn.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

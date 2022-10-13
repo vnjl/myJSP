@@ -23,8 +23,15 @@
   </style>
   <meta charset="UTF-8">
   <title>글목록창</title>
+   	<link rel="stylesheet" href="css/listArticles.css"/>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<script src="../js/jquery-1.7.1.min.js"></script>
+	<script src="js/sub02.js"></script>
 </head>
 <body>
+<%@ include file = "/header.jsp"%>
+<section>
+<div id="wrap">
 <table align="center" border="1"  width="80%"  >
   <tr height="10" align="center"  bgcolor="lightgreen">
      <td >글번호</td>
@@ -106,5 +113,8 @@
 </div>    
 <br><br>
 <a  class="cls1"  href="${contextPath}/board/articleForm.do"><p class="cls2">글쓰기</p></a>
+</div>
+</section>
+<%@ include file = "/footer.jsp" %>
 </body>
 </html>
