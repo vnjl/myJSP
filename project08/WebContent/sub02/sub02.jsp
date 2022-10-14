@@ -52,12 +52,16 @@
 				</form>
 			</div>	
 		</div>
-	  <ul id="boardSubjectLi">
-	     <li class="fl">글번호</li>
-	     <li class="fl">제목</li>
-		 <li class="fl">작성자</li>
-	     <li class="fl">작성일</li>
-	  </ul>
+		<ul id="board">
+			<li id="boardSubjectLi" class="cf">
+				<div class="fl boardNum">번호</div>
+				<div class="fl boardTitle">제목</div>
+				<div class="boardRightBox fr">
+					<div class="fl boardAuthor">글쓴이</div>
+					<div class="fl boardView">조회수</div>
+					<div class="fl boardDate">날짜</div>
+				</div>
+			</li>
 	<c:choose>
 	  <c:when test="${empty articlesList}" >
 	    <ul>
@@ -128,7 +132,8 @@
 	    </c:if>
 	</div>    
 	<br><br>
-	<a  class="cls1" href="${contextPath}/board/articleForm.do"><b>글쓰기</b></a>
+	<a  class="writeButton fr" href="${contextPath}/board/articleForm.do"><b>글쓰기</b></a>
+	</ul>
 	</section>
 <!-- --------------------------------------------- -->
 <%@ include file = "/footer.jsp" %>

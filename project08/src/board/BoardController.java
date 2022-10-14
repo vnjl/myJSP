@@ -63,7 +63,7 @@ public class BoardController extends HttpServlet {
 				articlesMap.put("section", section);
 				articlesMap.put("pageNum", pageNum);
 				request.setAttribute("articlesMap", articlesMap);
-				nextPage = "/sub02/listArticles.jsp";
+				nextPage = "/sub02/sub02.jsp";
 			} else if (action.equals("/listArticles.do")){  			
 				String _section=request.getParameter("section");
 				String _pageNum=request.getParameter("pageNum");
@@ -76,7 +76,7 @@ public class BoardController extends HttpServlet {
 				articlesMap.put("section", section);
 				articlesMap.put("pageNum", pageNum);
 				request.setAttribute("articlesMap", articlesMap);
-				nextPage = "/sub02/listArticles.jsp";
+				nextPage = "/sub02/sub02.jsp";
 			} else if (action.equals("/articleForm.do")) {
 				nextPage = "/sub02/articleForm.jsp";
 			} else if (action.equals("/addArticle.do")) {
@@ -181,7 +181,7 @@ public class BoardController extends HttpServlet {
 				return;
 			
 			}else {
-				nextPage = "/sub02/listArticles.jsp";
+				nextPage = "/sub02/sub02.jsp";
 			}
 
 			RequestDispatcher dispatch = request.getRequestDispatcher(nextPage);

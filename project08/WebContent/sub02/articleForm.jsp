@@ -38,7 +38,7 @@
 <section>
 	<h2 id="title"> 새 글 쓰기</h2>
 	<div id="wrap">
-  <form name="articleForm" method="post"   action="${contextPath}/board/addArticle.do"   enctype="multipart/form-data">
+  <form name="articleForm" method="post"   action="${contextPath}/sub02/sub02.jsp" enctype="multipart/form-data">
     <table border="0" align="center">
      <tr>
 	   <td align="right">글제목: </td>

@@ -62,7 +62,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="el oneDepth"><a href="/project08/sub01/sub01.jsp" class="el fl"><fmt:message key="menu.one.two" /></a>	
+				<li class="el oneDepth"><a href="/project08/sub02/sub02.jsp" class="el fl"><fmt:message key="menu.one.two" /></a>	
 					<div class="el twoDepth">
 						<div class="el two">
 							<div class="el twoTop cf">
@@ -117,7 +117,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="el oneDepth"><a href="/project08/sub01/sub01.jsp" class="el fl"><fmt:message key="menu.one.three" /></a>	
+				<li class="el oneDepth"><a href="/project08/sub03/sub03.jsp" class="el fl"><fmt:message key="menu.one.three" /></a>	
 					<div class="el twoDepth">
 						<div class="el two">
 							<div class="el twoTop cf">
